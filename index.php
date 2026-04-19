@@ -12,7 +12,8 @@ $servername = "localhost";
 $username = "nav";
 $password = "";
 $dbname = "nav";
-
+//信息配置
+$xx="个人测试";
 // 处理搜索
 $searchData = [];
 if (isset($_GET['q']) && trim($_GET['q']) !== '') {
@@ -80,7 +81,7 @@ if (isset($_GET['q']) && trim($_GET['q']) !== '') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>青和导航</title>
+    <title><?php echo $xx; ?></title>
     <style>
         * {
             margin: 0;
@@ -262,11 +263,11 @@ if (isset($_GET['q']) && trim($_GET['q']) !== '') {
 </head>
 <body>
     <header>
-        <a href="/" class="logo">青和导航</a>
+        <a href="/" class="logo"><?php echo $xx; ?></a>
         <div class="time" id="time"></div>
     </header>
     <div class="banner">
-        <h1>青和导航</h1>
+        <h1><?php echo $xx; ?></h1>
     </div>
     <div class="search">
         <form action="" method="get">
