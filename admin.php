@@ -4,13 +4,13 @@
  */
 
 // 登录密码（可自行修改）
-define('ADMIN_PASSWORD', 'sdb920824');
+define('ADMIN_PASSWORD', 'admin123');
 
-// 数据库配置（与index.php一致）
-$servername = "mysql7.serv00.com";
-$username = "m3433_yssylq";
-$password = "aA123123";
-$dbname = "m3433_yssylq";
+// 数据库配置
+$servername = "localhost";
+$username = "nav";
+$password = "";
+$dbname = "nav";
 
 // 登录验证
 session_start();
